@@ -13,7 +13,7 @@ format:
 Centro de Ciências Exatas e da Natureza (CCEN)<br>
 Departamento de Estatística<br><br><br>
 
-<strong>Trabalho Seaborn - 3ª Avaliação</strong><br><br><br>
+<strong>Trabalho Datasets Kaggle - COVID e Foodpanda </strong><br><br><br>
 
 Disciplina: <em>Introdução aos Softwares Estatísticos 2025.1</em><br>
 Professor: <em>Pedro Rafael Marinho</em><br>
