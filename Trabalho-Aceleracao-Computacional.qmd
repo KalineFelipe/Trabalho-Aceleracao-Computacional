@@ -49,6 +49,9 @@ Os conjuntos de dados utilizados neste trabalho foram obtidos do repositório **
 import pandas as pd
 import matplotlib.pyplot as plt
 from plotnine import ggplot, aes, geom_bar, theme_minimal, labs
+import random
+import time
+from numba import jit
 
 ## Carregar os arquivos CSV
 covid = pd.read_csv("Post-COVID_Conditions.csv")
@@ -57,9 +60,6 @@ food = pd.read_csv("Foodpanda Analysis Dataset.csv")
 ## Mostrar as primeiras linhas de cada conjunto
 print("POST-COVID CONDITIONS DATASET")
 display(covid.head())
-
-print("\nFOODPANDA DATASET")
-display(food.head())
 
 ## Parte 1 – Plotagem em Python
 
@@ -157,7 +157,7 @@ print(plot_sintomas)
 O **Plotnine** segue a filosofia do ggplot2 (em R): a construção é declarativa — você descreve o que quer (dados + estética + geometria) em camadas.
 O resultado é geralmente mais limpo e elegante, mas exige um pouco mais de conhecimento.
 
-## Dataset Foodpanda
+### Foodpanda Dataset
 
 Neste segundo dataset, o objetivo é visualizar o total de pedidos por cidade, comparando os estilos de codificação do **Matplotlib** e **Plotnine**.
 

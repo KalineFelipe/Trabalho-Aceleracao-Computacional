@@ -76,7 +76,7 @@ O <strong>Matplotlib</strong> é a base de muitas outras ferramentas gráficas e
 </section>
 <section id="importar-bibliotecas" class="level2">
 <h2 class="anchored" data-anchor-id="importar-bibliotecas">Importar bibliotecas</h2>
-<p>import pandas as pd import matplotlib.pyplot as plt from plotnine import ggplot, aes, geom_bar, theme_minimal, labs</p>
+<p>import pandas as pd import matplotlib.pyplot as plt from plotnine import ggplot, aes, geom_bar, theme_minimal, labs import random import time from numba import jit</p>
 </section>
 <section id="carregar-os-arquivos-csv" class="level2">
 <h2 class="anchored" data-anchor-id="carregar-os-arquivos-csv">Carregar os arquivos CSV</h2>
@@ -85,7 +85,6 @@ O <strong>Matplotlib</strong> é a base de muitas outras ferramentas gráficas e
 <section id="mostrar-as-primeiras-linhas-de-cada-conjunto" class="level2">
 <h2 class="anchored" data-anchor-id="mostrar-as-primeiras-linhas-de-cada-conjunto">Mostrar as primeiras linhas de cada conjunto</h2>
 <p>print(“POST-COVID CONDITIONS DATASET”) display(covid.head())</p>
-<p>print(“DATASET”) display(food.head())</p>
 </section>
 <section id="parte-1-plotagem-em-python" class="level2">
 <h2 class="anchored" data-anchor-id="parte-1-plotagem-em-python">Parte 1 – Plotagem em Python</h2>
@@ -138,8 +137,8 @@ O <strong>Matplotlib</strong> é a base de muitas outras ferramentas gráficas e
 <h1>———– Plotnine (ggplot) ————-</h1>
 <p>plot_sintomas = ( ggplot(top_sintomas, aes(x=“Sintoma”, y=“Frequência”, fill=“Sintoma”)) + geom_bar(stat=“identity”) + theme_minimal() + labs( title=“Sintomas mais frequentes relatados - Pós-COVID”, x=“Sintoma”, y=“Frequência” ) ) print(plot_sintomas)</p>
 <p>O <strong>Plotnine</strong> segue a filosofia do ggplot2 (em R): a construção é declarativa — você descreve o que quer (dados + estética + geometria) em camadas. O resultado é geralmente mais limpo e elegante, mas exige um pouco mais de conhecimento.</p>
-<section id="dataset-foodpanda" class="level2">
-<h2 class="anchored" data-anchor-id="dataset-foodpanda">Dataset Foodpanda</h2>
+<section id="foodpanda-dataset" class="level3">
+<h3 class="anchored" data-anchor-id="foodpanda-dataset">Foodpanda Dataset</h3>
 <p>Neste segundo dataset, o objetivo é visualizar o total de pedidos por cidade, comparando os estilos de codificação do <strong>Matplotlib</strong> e <strong>Plotnine</strong>.</p>
 </section>
 <section id="exemplo-simples-total-de-pedidos-por-cidade" class="level2">
